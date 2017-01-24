@@ -10,6 +10,7 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import systemoutgames.CurrentGameController;
+import systemoutgames.Player;
 
 public class ApplicationController {
 
@@ -64,7 +65,8 @@ public class ApplicationController {
 
             URL paneThreeUrl = getClass().getResource("SceneGameplay.fxml");
             FXMLLoader loader = new FXMLLoader(paneThreeUrl);
-            loader.setController(new CurrentGameController());
+            
+            loader.setController(new CurrentGameController(new Player("Player 1")));
             AnchorPane paneThree = loader.load();
 
             BorderPane border = Main.getRoot();
