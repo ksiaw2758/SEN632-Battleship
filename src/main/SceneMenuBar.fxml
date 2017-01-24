@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.MenuBar?>
+
+<MenuBar xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ApplicationController">
+    <menus>
+        <Menu mnemonicParsing="false" text="File">
+            <items>
+                <MenuItem fx:id="displayFour" mnemonicParsing="false" onAction="#switchToMain" text="Go to Main Menu" />
+                <MenuItem fx:id="displayThree" mnemonicParsing="false" onAction="#exitGame" text="Exit" />
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <items>
+                <MenuItem fx:id="displayTwo" mnemonicParsing="false" onAction="#switchToCredits" text="About BATTLESHIP" />
+            </items>
+        </Menu>
+    </menus>
+</MenuBar>
