@@ -63,7 +63,7 @@ public class ApplicationController {
 
         try {
 
-            URL paneThreeUrl = getClass().getResource("SceneGameplay.fxml");
+            URL paneThreeUrl = getClass().getResource("SceneUsername.fxml");
             FXMLLoader loader = new FXMLLoader(paneThreeUrl);
             
             loader.setController(new CurrentGameController(new Player("Player 1")));
