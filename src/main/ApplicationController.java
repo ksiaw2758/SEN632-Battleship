@@ -9,6 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import systemoutgames.AIPlayer;
 import systemoutgames.CurrentGameController;
 import systemoutgames.Player;
 
@@ -65,8 +66,6 @@ public class ApplicationController {
 
             URL paneThreeUrl = getClass().getResource("SceneUsername.fxml");
             FXMLLoader loader = new FXMLLoader(paneThreeUrl);
-            
-            loader.setController(new CurrentGameController(new Player("Player 1")));
             AnchorPane paneThree = loader.load();
 
             BorderPane border = Main.getRoot();
@@ -75,6 +74,27 @@ public class ApplicationController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    void submitPlayerName(ActionEvent event) {
+        URL shipSelection = getClass().getResource("SceneShipSelection.fxml");
+        FXMLLoader loader = new FXMLLoader(shipSelection);
+
+        loader.setController(new CurrentGameController(new Player("Player 1"), new AIPlayer("Captain Ahab")));
+
+
+        AnchorPane paneThree = null;
+        try {
+            paneThree = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        BorderPane border = Main.getRoot();
+        border.setCenter(paneThree);
+
+        loader.setController(new CurrentGameController(new Player("Player 1"), new AIPlayer("Captain Ahab")));
     }
 
     @FXML

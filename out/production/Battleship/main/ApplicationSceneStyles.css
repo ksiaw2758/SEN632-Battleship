@@ -1,0 +1,14 @@
+#Stage{
+    -fx-background-image: url("/images/background.jpg");
+    -fx-background-position: center center;
+}
+
+#SceneGame{
+    -fx-background-image: url("/images/SceneMainMenu.png");
+    -fx-background-position: center center;
+}
+
+#SceneCredits{
+    -fx-background-image: url("/images/SceneCredits.jpg");
+    -fx-background-position: center center;
+}
