@@ -27,6 +27,9 @@ public class ApplicationController {
     @FXML // fx:id="displayFour"
     private MenuItem displayFour; // Value injected by FXMLLoader
 
+    @FXML // fx:id="displayFive"
+    private MenuItem displayFive; // Value injected by FXMLLoader
+
     @FXML
     void switchToMain(ActionEvent event) {
 
@@ -60,7 +63,7 @@ public class ApplicationController {
     }
 
     @FXML
-    void switchToGame(ActionEvent event) {
+    void switchToUsername(ActionEvent event) {
 
         try {
 
@@ -107,6 +110,22 @@ public class ApplicationController {
 
             BorderPane border = Main.getRoot();
             border.setCenter(paneFour);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void switchToGameplay(ActionEvent event) {
+
+        try {
+
+            URL paneFiveUrl = getClass().getResource("SceneGameplay.fxml");
+            AnchorPane paneFive = FXMLLoader.load( paneFiveUrl );
+
+            BorderPane border = Main.getRoot();
+            border.setCenter(paneFive);
 
         } catch (IOException e) {
             e.printStackTrace();
