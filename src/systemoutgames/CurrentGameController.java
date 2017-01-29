@@ -59,16 +59,19 @@ public class CurrentGameController {
         this.playerOne = playerOne;
         this.playerTwo = playerTwo;
 
+        playerTwoSunkenShips = new ArrayList<>();
+
     }
 
     public void initialize() {
         String[] options = {"horizontal", "vertical"};
-
-        aircraftCarrierDirection.getItems().addAll(options);
-        battleShipDirection.getItems().addAll(options);
-        submarineDirection.getItems().addAll(options);
-        cruiserDirection.getItems().addAll(options);
-        destroyerDirection.getItems().addAll(options);
+        if(aircraftCarrierDirection != null) {
+            aircraftCarrierDirection.getItems().addAll(options);
+            battleShipDirection.getItems().addAll(options);
+            submarineDirection.getItems().addAll(options);
+            cruiserDirection.getItems().addAll(options);
+            destroyerDirection.getItems().addAll(options);
+        }
     }
 
     @FXML
@@ -79,15 +82,15 @@ public class CurrentGameController {
         checkResult(result, playerTwoSunkenShips);
 
         if(playerTwoSunkenShips.size() == 5){
-            displayEndOfGame();
+            displayEndOfGame(playerOne);
         }
 
 
 
     }
 
-    private void displayEndOfGame() {
-        
+    private void displayEndOfGame(Player winner) {
+
     }
 
     private void checkResult(HitResult result, List<Ship> sunkenShips) {
@@ -131,7 +134,7 @@ public class CurrentGameController {
 
         AnchorPane paneGame = null;
         try {
-            paneGame = FXMLLoader.load( gameScreen );
+            paneGame = loader.load();
         } catch (IOException e) {
             e.printStackTrace();
         }

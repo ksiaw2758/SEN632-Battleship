@@ -6,7 +6,7 @@ public class Location {
     private int y;
     private Direction direction;
 
-    public Location(int x, int y, Direction direction) {
+    public Location(Integer x, Integer y, Direction direction) {
         this.x = x;
         this.y = y;
         this.direction = direction;
@@ -30,12 +30,12 @@ public class Location {
         return direction;
     }
 
-    private int getXValueFromString(Character x) {
+    protected int getXValueFromString(Character x) {
         char ch  = Character.toLowerCase(x);
-            int temp = (int)ch;
-            int temp_integer = 97;
+        int temp = (int)ch;
+        int temp_integer = 97;
 
-            return temp - temp_integer;
+        return temp - temp_integer;
     }
 
     @Override

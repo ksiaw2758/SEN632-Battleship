@@ -60,7 +60,7 @@ public class Player {
         return ships;
     }
 
-    private Direction getShipDirection(String shipDirection) {
+    protected Direction getShipDirection(String shipDirection) {
         String direction = shipDirection.toLowerCase();
 
         switch(direction){
