@@ -53,6 +53,7 @@ public class CurrentGameController {
     private Grid primaryGrid;
     private Grid secondaryGrid;
 
+    private List<Ship> playerTwoSunkenShips;
 
     public CurrentGameController(Player playerOne, Player playerTwo) {
         this.playerOne = playerOne;
@@ -72,9 +73,43 @@ public class CurrentGameController {
 
     @FXML
     void submitHit(ActionEvent event) {
-        
+
         HitResult result = secondaryGrid.hit(new Location(hitSelection.getText().charAt(0), hitSelection.getText().charAt(1), Direction.HORIZONTAL));
 
+        checkResult(result, playerTwoSunkenShips);
+
+        if(playerTwoSunkenShips.size() == 5){
+            displayEndOfGame();
+        }
+
+
+
+    }
+
+    private void displayEndOfGame() {
+        
+    }
+
+    private void checkResult(HitResult result, List<Ship> sunkenShips) {
+        if(result.isShipHit()) {
+            playHitSound();
+        }
+        if(result.isShipSunk()) {
+            playShipSunkSound();
+            displaySunkShip();
+            sunkenShips.add(result.getSunkShip());
+        }
+    }
+
+    private void displaySunkShip() {
+
+    }
+
+    private void playShipSunkSound() {
+
+    }
+
+    private void playHitSound() {
 
     }
 

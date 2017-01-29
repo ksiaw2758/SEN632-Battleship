@@ -4,18 +4,16 @@ public class HitResult {
 
     private boolean shipHit;
     private boolean shipSunk;
-    private String sunkShipName;
-    private boolean gameOver;
+    private Ship sunkShip;
 
-    public HitResult(boolean shipHit, boolean shipSunk, String sunkShipName, boolean gameOver) {
+    public HitResult(boolean shipHit, boolean shipSunk, Ship sunkShip) {
         this.shipHit = shipHit;
         this.shipSunk = shipSunk;
-        this.sunkShipName = sunkShipName;
-        this.gameOver = gameOver;
+        this.sunkShip = sunkShip;
     }
 
-    public String getSunkShipName() {
-        return sunkShipName;
+    public Ship getSunkShip() {
+        return sunkShip;
     }
 
     public boolean isShipHit() {
@@ -24,9 +22,5 @@ public class HitResult {
 
     public boolean isShipSunk() {
         return shipSunk;
-    }
-
-    public boolean isGameOver() {
-        return gameOver;
     }
 }

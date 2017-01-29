@@ -20,9 +20,6 @@ public class Grid {
 
     public void placeShips(List<Ship> ships){
         for(Ship ship : ships) {
-            int x = ship.getLocation().getStartingX();
-            int y = ship.getLocation().getStartingY();
-
             ship.getAllLocations().stream().forEach(location -> {
                 squares[location.getStartingX()][location.getStartingY()] = new Square(ship);
             });
@@ -30,6 +27,8 @@ public class Grid {
     }
 
     public HitResult hit(Location location) {
-        return new HitResult(false, false, null, false);
+        Square square = squares[location.getStartingX()][location.getStartingY()];
+
+        return square.hit();
     }
 }

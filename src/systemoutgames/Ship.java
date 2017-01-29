@@ -28,6 +28,10 @@ public class Ship {
         return size;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public List<Location> getAllLocations() {
         List<Location> locations = IntStream.range(0, size).boxed().map(n -> {
             if(location.getDirection().equals(Direction.HORIZONTAL)){
@@ -38,5 +42,10 @@ public class Ship {
         }).collect(Collectors.toList());
 
         return locations;
+    }
+
+    public int hit() {
+        health--;
+        return health;
     }
 }
