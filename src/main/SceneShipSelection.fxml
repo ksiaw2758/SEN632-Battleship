@@ -257,12 +257,12 @@
             <Label layoutX="24.0" layoutY="311.0" text="Submarine:" textFill="#b5b5b5" />
             <Label layoutX="24.0" layoutY="349.0" text="Cruiser:" textFill="#b5b5b5" />
             <Label layoutX="24.0" layoutY="387.0" text="Destroyer:" textFill="#b5b5b5" />
-            <TextField fx:id="AircraftCarrierCoordinate" layoutX="112.0" layoutY="231.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="35.0" promptText="A1" />
-            <TextField fx:id="BattleshipCoordinate" layoutX="112.0" layoutY="269.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="35.0" promptText="B2" />
-            <TextField fx:id="SubmarineCoordinate" layoutX="112.0" layoutY="307.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="35.0" promptText="C3" />
-            <TextField fx:id="CruiserCoordinate" layoutX="112.0" layoutY="345.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="35.0" promptText="D4" />
-            <TextField fx:id="DestroyerCoordinate" layoutX="112.0" layoutY="383.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="35.0" promptText="E5" />
-            <ComboBox fx:id="AircraftCarrierOrientation" layoutX="181.0" layoutY="232.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="103.0" />
+            <TextField fx:id="aircraftCarrierCoordinate" layoutX="112.0" layoutY="231.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="35.0" promptText="A1" />
+            <TextField fx:id="battleshipCoordinate" layoutX="112.0" layoutY="269.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="35.0" promptText="B2" />
+            <TextField fx:id="submarineCoordinate" layoutX="112.0" layoutY="307.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="35.0" promptText="C3" />
+            <TextField fx:id="cruiserCoordinate" layoutX="112.0" layoutY="345.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="35.0" promptText="D4" />
+            <TextField fx:id="destroyerCoordinate" layoutX="112.0" layoutY="383.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="35.0" promptText="E5" />
+            <ComboBox fx:id="aircraftCarrierDirection" layoutX="181.0" layoutY="232.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="103.0" />
                 <Button fx:id="SubmitShips" layoutX="24.0" layoutY="420.0" onAction="#submitShips" prefHeight="26.0" prefWidth="260.0" text="Place Ships" />
             <Label layoutX="112.0" layoutY="197.0" text="Coordinate" textFill="#b5b5b5">
                <font>
@@ -375,10 +375,10 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <ComboBox fx:id="AircraftCarrierOrientation1" layoutX="181.0" layoutY="269.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="103.0" />
-            <ComboBox fx:id="AircraftCarrierOrientation11" layoutX="181.0" layoutY="307.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="103.0" />
-            <ComboBox fx:id="AircraftCarrierOrientation12" layoutX="181.0" layoutY="345.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="103.0" />
-            <ComboBox fx:id="AircraftCarrierOrientation13" layoutX="181.0" layoutY="383.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="103.0" />
+            <ComboBox fx:id="battleShipDirection" layoutX="181.0" layoutY="269.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="103.0" />
+            <ComboBox fx:id="submarineDirection" layoutX="181.0" layoutY="307.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="103.0" />
+            <ComboBox fx:id="cruiserDirection" layoutX="181.0" layoutY="345.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="103.0" />
+            <ComboBox fx:id="destroyerDirection" layoutX="181.0" layoutY="383.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="103.0" />
          </children></Pane>
     </children>
 </AnchorPane>

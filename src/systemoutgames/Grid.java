@@ -20,19 +20,12 @@ public class Grid {
 
     public void placeShips(List<Ship> ships){
         for(Ship ship : ships) {
-            int x = ship.getLocation().getX();
-            int y = ship.getLocation().getY();
+            int x = ship.getLocation().getStartingX();
+            int y = ship.getLocation().getStartingY();
 
-            boolean isHorizontal = ship.getLocation().getDirection().equals(Direction.HORIZONTAL);
-
-            while( x<ship.getSize() && y<ship.getSize() ) {
-                squares[x][y].setShip(ship);
-                if(isHorizontal) {
-                    y++;
-                } else {
-                    x++;
-                }
-            }
+            ship.getAllLocations().stream().forEach(location -> {
+                squares[location.getStartingX()][location.getStartingY()] = new Square(ship);
+            });
         }
     }
 }
