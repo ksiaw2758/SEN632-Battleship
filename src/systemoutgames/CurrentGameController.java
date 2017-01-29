@@ -43,6 +43,10 @@ public class CurrentGameController {
     @FXML
     public ComboBox<String> destroyerDirection;
 
+
+    @FXML
+    public TextField hitSelection;
+
     private Player playerOne;
     private Player playerTwo;
 
@@ -64,6 +68,14 @@ public class CurrentGameController {
         submarineDirection.getItems().addAll(options);
         cruiserDirection.getItems().addAll(options);
         destroyerDirection.getItems().addAll(options);
+    }
+
+    @FXML
+    void submitHit(ActionEvent event) {
+        
+        HitResult result = secondaryGrid.hit(new Location(hitSelection.getText().charAt(0), hitSelection.getText().charAt(1), Direction.HORIZONTAL));
+
+
     }
 
     @FXML

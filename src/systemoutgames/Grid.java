@@ -28,4 +28,8 @@ public class Grid {
             });
         }
     }
+
+    public HitResult hit(Location location) {
+        return new HitResult(false, false, null, false);
+    }
 }
