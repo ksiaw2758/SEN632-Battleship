@@ -43,6 +43,9 @@ public class CurrentGameController {
     @FXML
     public ComboBox<String> destroyerDirection;
 
+//    @FXML private Parent primaryGrid;
+    @FXML private Grid primaryGridController;
+    @FXML private Grid secondaryGridController;
 
     @FXML
     public TextField hitSelection;
@@ -50,8 +53,6 @@ public class CurrentGameController {
     private Player playerOne;
     private Player playerTwo;
 
-    private Grid primaryGrid;
-    private Grid secondaryGrid;
 
     private List<Ship> playerTwoSunkenShips;
 
@@ -77,16 +78,13 @@ public class CurrentGameController {
     @FXML
     void submitHit(ActionEvent event) {
 
-        HitResult result = secondaryGrid.hit(new Location(hitSelection.getText().charAt(0), hitSelection.getText().charAt(1), Direction.HORIZONTAL));
+        HitResult result = secondaryGridController.hit(new Location(hitSelection.getText().charAt(0), hitSelection.getText().charAt(1), Direction.HORIZONTAL));
 
         checkResult(result, playerTwoSunkenShips);
 
         if(playerTwoSunkenShips.size() == 5){
             displayEndOfGame(playerOne);
         }
-
-
-
     }
 
     private void displayEndOfGame(Player winner) {
@@ -128,8 +126,6 @@ public class CurrentGameController {
         List<Ship> playerOneShips = playerOne.selectShips(selections);
         List<Ship> playerTwoShips = playerTwo.selectShips();
 
-        createGrids(playerOneShips, playerTwoShips);
-
         loader.setController(this);
 
         AnchorPane paneGame = null;
@@ -141,26 +137,26 @@ public class CurrentGameController {
 
         BorderPane border = Main.getRoot();
         border.setCenter(paneGame);
+
+        createGrids(playerOneShips, playerTwoShips);
     }
 
     private List<ShipSelection> buildShipSelections() {
         List<ShipSelection> selection = new ArrayList<>();
 
-        selection.add(shipSelectionBuilder().name("Aircraft Carrier").coordinants(aircraftCarrierCoordinate.getText()).direction(aircraftCarrierDirection.getValue()).build());
-        selection.add(shipSelectionBuilder().name("Battle Ship").coordinants(battleshipCoordinate.getText()).direction(battleShipDirection.getValue()).build());
-        selection.add(shipSelectionBuilder().name("Submarine").coordinants(submarineCoordinate.getText()).direction(submarineDirection.getValue()).build());
-        selection.add(shipSelectionBuilder().name("Crusier").coordinants(cruiserCoordinate.getText()).direction(cruiserDirection.getValue()).build());
-        selection.add(shipSelectionBuilder().name("Destroyer").coordinants(destroyerCoordinate.getText()).direction(destroyerDirection.getValue()).build());
+        selection.add(shipSelectionBuilder().name("Aircraft Carrier").startingHealth(5).coordinants(aircraftCarrierCoordinate.getText()).direction(aircraftCarrierDirection.getValue()).build());
+        selection.add(shipSelectionBuilder().name("Battle Ship").startingHealth(4).coordinants(battleshipCoordinate.getText()).direction(battleShipDirection.getValue()).build());
+        selection.add(shipSelectionBuilder().name("Submarine").startingHealth(3).coordinants(submarineCoordinate.getText()).direction(submarineDirection.getValue()).build());
+        selection.add(shipSelectionBuilder().name("Crusier").startingHealth(3).coordinants(cruiserCoordinate.getText()).direction(cruiserDirection.getValue()).build());
+        selection.add(shipSelectionBuilder().name("Destroyer").startingHealth(2).coordinants(destroyerCoordinate.getText()).direction(destroyerDirection.getValue()).build());
 
         return selection;
     }
 
     private void createGrids(List<Ship> playerOneShips, List<Ship> playerTwoShips) {
-        primaryGrid = new Grid();
-        secondaryGrid = new Grid();
 
-        primaryGrid.placeShips(playerOneShips);
-        secondaryGrid.placeShips(playerTwoShips);
+        primaryGridController.placeShips(playerOneShips);
+        secondaryGridController.placeShips(playerTwoShips);
     }
 
 

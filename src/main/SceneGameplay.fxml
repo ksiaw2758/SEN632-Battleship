@@ -1,661 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Pane id="SceneGameplay" layoutX="312.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" styleClass="ApplicationSceneStyle" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <Label layoutX="27.0" layoutY="538.0" text="Coordinate:" textFill="#323232">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <TextField fx:id="hitSelection" layoutX="97.0" layoutY="534.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="35.0" promptText="E5" />
-            <Button fx:id="submitHit" onAction="#submitHit" layoutX="139.0" layoutY="534.0" prefHeight="26.0" prefWidth="103.0" text="Fire" textFill="RED" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="517.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="550.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="583.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="550.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="649.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="484.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="682.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="583.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="385.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="385.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="385.0" layoutY="341.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="385.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="649.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="517.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="451.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="715.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="682.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="484.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="385.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="616.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="385.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="385.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="616.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="715.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="385.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="385.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="451.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="418.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="418.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="385.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="187.0" layoutY="472.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="154.0" layoutY="472.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="319.0" layoutY="472.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="88.0" layoutY="472.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="286.0" layoutY="472.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="55.0" layoutY="472.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="121.0" layoutY="472.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="220.0" layoutY="472.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="352.0" layoutY="472.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="253.0" layoutY="472.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerA1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="55.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerA2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="88.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="22.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Label layoutX="32.0" layoutY="147.0" text="A" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Rectangle fx:id="PlayerA4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="154.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerA3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="121.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerA5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="187.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerA6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="220.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerA7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="253.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerA8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="286.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerA9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="319.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerA10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="352.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerB10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="352.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerB9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="319.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerB8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="286.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerB7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="253.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerB6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="220.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerB5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="187.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerB3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="121.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerB4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="154.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="22.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerB2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="88.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerB1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="55.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerD1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="55.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerD2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="88.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="22.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerD4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="154.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerD3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="121.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerD5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="187.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerD6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="220.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerD7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="253.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerD8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="286.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerD9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="319.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerD10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="352.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerC10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="352.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerC9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="319.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerC8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="286.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerC7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="253.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerC6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="220.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerC5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="187.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerC3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="121.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerC4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="154.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="22.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerC2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="88.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerC1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="55.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerG1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="55.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerG2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="88.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="22.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerG4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="154.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerG3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="121.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerG5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="187.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerG6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="220.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerG7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="253.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerG8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="286.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerG9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="319.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerG10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="352.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerH10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="352.0" layoutY="373.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerH9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="319.0" layoutY="373.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerH8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="286.0" layoutY="373.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerH7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="253.0" layoutY="373.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerH6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="220.0" layoutY="373.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerH5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="187.0" layoutY="373.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerH3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="121.0" layoutY="373.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerH4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="154.0" layoutY="373.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="22.0" layoutY="373.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerH2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="88.0" layoutY="373.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerH1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="55.0" layoutY="373.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerF1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="55.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerF2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="88.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="22.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerF4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="154.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerF3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="121.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerF5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="187.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerF6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="220.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerF7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="253.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerF8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="286.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerF9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="319.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerF10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="352.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerE10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="352.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerE9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="319.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerE8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="286.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerE7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="253.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerE6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="220.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerE5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="187.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerE3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="121.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerE4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="154.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="22.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerE2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="88.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerE1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="55.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerI1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="55.0" layoutY="406.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerI2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="88.0" layoutY="406.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="22.0" layoutY="406.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerI4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="154.0" layoutY="406.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerI3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="121.0" layoutY="406.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerI5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="187.0" layoutY="406.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerI6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="220.0" layoutY="406.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerI7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="253.0" layoutY="406.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerI8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="286.0" layoutY="406.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerI9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="319.0" layoutY="406.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerI10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="352.0" layoutY="406.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerJ10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="352.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerJ9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="319.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerJ8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="286.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerJ7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="253.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerJ6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="220.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerJ5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="187.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerJ3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="121.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerJ4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="154.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="22.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerJ2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="88.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="PlayerJ1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="55.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Label layoutX="32.0" layoutY="180.0" text="B" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="32.0" layoutY="213.0" text="C" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="34.0" layoutY="411.0" text="I" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="33.0" layoutY="279.0" text="E" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="31.0" layoutY="378.0" text="H" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="32.0" layoutY="345.0" text="G" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="32.0" layoutY="246.0" text="D" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="33.0" layoutY="444.0" text="J" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="33.0" layoutY="312.0" text="F" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="352.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="319.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="286.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="253.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="220.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="187.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="121.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="154.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="88.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="55.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Label layoutX="66.0" layoutY="114.0" text="1" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="164.0" layoutY="114.0" text="4" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="231.0" layoutY="114.0" text="6" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="264.0" layoutY="114.0" text="7" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="297.0" layoutY="114.0" text="8" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="99.0" layoutY="114.0" text="2" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="330.0" layoutY="114.0" text="9" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="132.0" layoutY="114.0" text="3" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="359.0" layoutY="114.0" text="10" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="197.0" layoutY="114.0" text="5" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="197.0" layoutY="477.0" text="5" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="359.0" layoutY="477.0" text="10" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="132.0" layoutY="477.0" text="3" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="330.0" layoutY="477.0" text="9" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="99.0" layoutY="477.0" text="2" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="297.0" layoutY="477.0" text="8" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="264.0" layoutY="477.0" text="7" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="231.0" layoutY="477.0" text="6" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="164.0" layoutY="477.0" text="4" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="66.0" layoutY="477.0" text="1" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="429.0" layoutY="478.0" text="1" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="527.0" layoutY="478.0" text="4" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="594.0" layoutY="478.0" text="6" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="627.0" layoutY="478.0" text="7" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="660.0" layoutY="478.0" text="8" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="462.0" layoutY="478.0" text="2" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="693.0" layoutY="478.0" text="9" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="495.0" layoutY="478.0" text="3" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="722.0" layoutY="478.0" text="10" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="560.0" layoutY="478.0" text="5" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="560.0" layoutY="115.0" text="5" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="722.0" layoutY="115.0" text="10" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="495.0" layoutY="115.0" text="3" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="693.0" layoutY="115.0" text="9" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="462.0" layoutY="115.0" text="2" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="660.0" layoutY="115.0" text="8" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="627.0" layoutY="115.0" text="7" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="594.0" layoutY="115.0" text="6" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="527.0" layoutY="115.0" text="4" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="429.0" layoutY="115.0" text="1" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="396.0" layoutY="313.0" text="F" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="396.0" layoutY="445.0" text="J" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="395.0" layoutY="247.0" text="D" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="395.0" layoutY="346.0" text="G" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="394.0" layoutY="379.0" text="H" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="396.0" layoutY="280.0" text="E" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="397.0" layoutY="412.0" text="I" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="395.0" layoutY="214.0" text="C" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="395.0" layoutY="181.0" text="B" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Rectangle fx:id="EnemyJ1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="418.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyJ2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="451.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyJ4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="517.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyJ3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="484.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyJ5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="550.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyJ6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="583.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyJ7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="616.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyJ8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="649.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyJ9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="682.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyJ10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="715.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyI10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="715.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyI9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="682.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyI8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="649.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyI7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="616.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyI6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="583.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyI5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="550.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyI3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="484.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyI4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="517.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyI2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="451.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyI1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="418.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyE1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="418.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyE2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="451.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyE4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="517.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyE3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="484.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyE5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="550.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyE6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="583.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyE7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="616.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyE8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="649.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyE9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="682.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyE10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="715.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyF10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="715.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyF9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="682.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyF8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="649.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyF7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="616.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyF6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="583.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyF5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="550.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyF3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="484.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyF4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="517.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyF2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="451.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyF1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="418.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyH1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="418.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyH2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="451.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyH" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="517.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyH3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="484.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyH5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="550.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyH6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="583.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyH7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="616.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyH8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="649.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyH9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="682.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyH10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="715.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyG10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="715.0" layoutY="341.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyG9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="682.0" layoutY="341.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyG8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="649.0" layoutY="341.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyG7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="616.0" layoutY="341.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyG6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="583.0" layoutY="341.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyG5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="550.0" layoutY="341.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyG3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="484.0" layoutY="341.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyG4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="517.0" layoutY="341.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyG2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="451.0" layoutY="341.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyG1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="418.0" layoutY="341.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyC1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="418.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyC2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="451.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyC4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="517.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyC3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="484.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyC5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="550.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyC6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="583.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyC7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="616.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyC8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="649.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyC9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="682.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyC10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="715.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyD10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="715.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyD9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="682.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyD8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="649.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyD7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="616.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyD6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="583.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyD5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="550.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyD3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="484.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyD4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="517.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyD2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="451.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyD1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="418.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyB1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="418.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyB2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="451.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyB4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="517.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyB3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="484.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyB5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="550.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyB6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="583.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyB7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="616.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyB8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="649.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyB9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="682.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyB10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="715.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyA10" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="715.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyA9" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="682.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyA8" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="649.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyA7" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="616.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyA6" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="583.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyA5" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="550.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyA3" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="484.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyA4" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="517.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Label layoutX="395.0" layoutY="148.0" text="A" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Rectangle fx:id="EnemyA2" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="451.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle fx:id="EnemyA1" arcHeight="5.0" arcWidth="5.0" fill="#bfbfbf" height="30.0" layoutX="418.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="748.0" layoutY="441.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="748.0" layoutY="177.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="748.0" layoutY="243.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="748.0" layoutY="408.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="748.0" layoutY="342.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="748.0" layoutY="144.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="748.0" layoutY="309.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="748.0" layoutY="210.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="748.0" layoutY="276.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="30.0" layoutX="748.0" layoutY="375.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-            <Label layoutX="759.0" layoutY="314.0" text="F" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="759.0" layoutY="446.0" text="J" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="758.0" layoutY="248.0" text="D" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="758.0" layoutY="347.0" text="G" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="757.0" layoutY="380.0" text="H" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="759.0" layoutY="281.0" text="E" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="760.0" layoutY="413.0" text="I" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="758.0" layoutY="215.0" text="C" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="758.0" layoutY="182.0" text="B" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="758.0" layoutY="149.0" text="A" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="155.0" layoutY="40.0" text="PLAYER" textAlignment="CENTER" textFill="#2f2f2f">
-               <font>
-                  <Font name="System Bold" size="36.0" />
-               </font>
-            </Label>
-            <Label layoutX="519.0" layoutY="40.0" text="ENEMY" textAlignment="CENTER" textFill="#2f2f2f">
-               <font>
-                  <Font name="System Bold" size="36.0" />
-               </font>
-            </Label>
-         </children></Pane>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" layoutX="635.0" layoutY="732.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" layoutX="672.0" layoutY="732.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" layoutX="709.0" layoutY="732.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" layoutX="746.0" layoutY="732.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" layoutX="783.0" layoutY="732.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" layoutX="598.0" layoutY="732.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" layoutX="561.0" layoutY="732.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" layoutX="524.0" layoutY="732.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" layoutX="487.0" layoutY="732.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+      <BorderPane id="SceneGameplay" layoutX="312.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" styleClass="ApplicationSceneStyle" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <BorderPane>
+               <left>
+                  <Label fx:id="playerOneLabel" alignment="CENTER" prefWidth="350.00" text="PLAYER" textAlignment="CENTER" textFill="#2f2f2f">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets top="10"/>
+                     </BorderPane.margin>
+                  </Label>
+               </left>
+               <right>
+                  <Label fx:id="playerTwoLabel" alignment="CENTER" contentDisplay="CENTER" prefWidth="350.00" text="ENEMY" textAlignment="CENTER" textFill="#2f2f2f">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets top="10"/>
+                     </BorderPane.margin>
+                  </Label>
+               </right>
+            </BorderPane>
+
+         </top>
+         <left>
+            <fx:include fx:id="primaryGrid" source="Grid.fxml" />
+         </left>
+         <right>
+            <fx:include fx:id="secondaryGrid" source="Grid.fxml" />
+         </right>
+
+         <bottom>
+            <BorderPane>
+               <left>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Coordinate:" textFill="#323232" BorderPane.alignment="CENTER_RIGHT">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  <BorderPane.margin>
+                     <Insets bottom="50.0" left="150.0" />
+                  </BorderPane.margin></Label>
+               </left>
+               <center>
+                  <TextField fx:id="hitSelection" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="50.0" promptText="E5">
+                  <BorderPane.margin>
+                     <Insets bottom="50.0" left="-200.0" />
+                  </BorderPane.margin></TextField>
+               </center>
+               <right>
+                  <Button fx:id="submitHit" onAction="#submitHit" prefHeight="26.0" prefWidth="103.0" text="Fire" textFill="RED">
+                  <BorderPane.margin>
+                     <Insets bottom="50.0" right="100.0" />
+                  </BorderPane.margin></Button>
+               </right>
+            </BorderPane>
+         </bottom>
+
+      </BorderPane>
 </AnchorPane>

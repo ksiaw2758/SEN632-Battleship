@@ -27,3 +27,9 @@
     -fx-background-image: url("/images/SceneGameplay.png");
     -fx-background-position: center center;
 }
+
+#Grid{
+    -fx-padding: 15px;
+    -fx-border-insets: 15px;
+    -fx-background-insets: 15px;
+}
