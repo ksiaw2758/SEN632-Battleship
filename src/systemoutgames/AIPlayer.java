@@ -9,8 +9,11 @@ public class AIPlayer extends Player{
 
     private static final int gridSize = 10;
 
+    private List<Location> hitLocations;
+
     public AIPlayer(String name) {
         super(name);
+        hitLocations = new ArrayList<>();
     }
 
     @Override
@@ -24,6 +27,20 @@ public class AIPlayer extends Player{
         ships.add(placeShip("Cruiser", 3, ships));
         ships.add(placeShip("Destroyer", 2, ships));
         return ships;
+    }
+
+    @Override
+    public Location selectHit() {
+        Location selection = new Location(getRandomNumber(gridSize),getRandomNumber(gridSize), getRandomDirection());
+        if(selectionAlreadyMade(selection)){
+            return selectHit();
+        }
+        return selection;
+    }
+
+    private boolean selectionAlreadyMade(Location selection) {
+        return hitLocations.stream()
+                .anyMatch(location -> location.equals(selection));
     }
 
     private int getRandomNumber(int bound) {

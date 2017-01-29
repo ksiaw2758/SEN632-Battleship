@@ -62,12 +62,14 @@ public class CurrentGameController {
 
 
     private List<Ship> playerTwoSunkenShips;
+    private List<Ship> playerOneSunkenShips;
 
     public CurrentGameController(Player playerOne, Player playerTwo) {
         this.playerOne = playerOne;
         this.playerTwo = playerTwo;
 
         playerTwoSunkenShips = new ArrayList<>();
+        playerOneSunkenShips = new ArrayList<>();
 
     }
 
@@ -96,7 +98,17 @@ public class CurrentGameController {
 
         if(playerTwoSunkenShips.size() == 5){
             displayEndOfGame(playerOne);
+        } else {
+            Location playerTwoHit = playerTwo.selectHit();
+            HitResult playerTwoResult = primaryGridController.hit(playerTwoHit);
+
+            checkResult(playerTwoResult, playerOneSunkenShips);
+
+            if(playerTwoSunkenShips.size() == 5){
+                displayEndOfGame(playerOne);
+            }
         }
+
     }
 
     private void displayEndOfGame(Player winner) {

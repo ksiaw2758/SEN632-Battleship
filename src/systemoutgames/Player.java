@@ -86,4 +86,8 @@ public class Player {
                 }).collect(Collectors.toList());
 
     }
+
+    public Location selectHit() {
+        return null;
+    }
 }
