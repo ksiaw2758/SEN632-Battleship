@@ -16,12 +16,16 @@ public class Grid {
 
     private Square[][] squares = new Square[10][10];
 
+    private boolean hideShips;
+
     public void initialize() {
         System.out.print(gridPane);
     }
 
     public Grid() {
+
         buildSquares();
+        hideShips = false;
     }
 
     private void buildSquares() {
@@ -36,8 +40,10 @@ public class Grid {
         for(Ship ship : ships) {
             ship.getAllLocations().stream().forEach(location -> {
                 squares[location.getStartingX()][location.getStartingY()] = new Square(ship);
-                Rectangle rec = getRectangle(getLocationAsString(location));
-                rec.setFill(Color.DARKGRAY);
+                if(!hideShips) {
+                    Rectangle rec = getRectangle(getLocationAsString(location));
+                    rec.setFill(Color.DARKGRAY);
+                }
             });
         }
     }

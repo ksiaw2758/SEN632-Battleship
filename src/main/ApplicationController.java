@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import systemoutgames.AIPlayer;
@@ -29,6 +30,9 @@ public class ApplicationController {
 
     @FXML // fx:id="displayFive"
     private MenuItem displayFive; // Value injected by FXMLLoader
+
+    @FXML
+    private TextField playerName;
 
     @FXML
     void switchToMain(ActionEvent event) {
@@ -84,7 +88,7 @@ public class ApplicationController {
         URL shipSelection = getClass().getResource("SceneShipSelection.fxml");
         FXMLLoader loader = new FXMLLoader(shipSelection);
 
-        loader.setController(new CurrentGameController(new Player("Player 1"), new AIPlayer("Captain Ahab")));
+        loader.setController(new CurrentGameController(new Player(playerName.getText()), new AIPlayer("Captain Ahab")));
 
 
         AnchorPane paneThree = null;

@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
@@ -50,6 +51,12 @@ public class CurrentGameController {
     @FXML
     public TextField hitSelection;
 
+    @FXML
+    private Label playerOneLabel;
+    @FXML
+    private Label playerTwoLabel;
+
+
     private Player playerOne;
     private Player playerTwo;
 
@@ -72,6 +79,11 @@ public class CurrentGameController {
             submarineDirection.getItems().addAll(options);
             cruiserDirection.getItems().addAll(options);
             destroyerDirection.getItems().addAll(options);
+        }
+
+        if(playerOneLabel != null) {
+            playerOneLabel.setText(playerOne.getName());
+            playerTwoLabel.setText(playerTwo.getName());
         }
     }
 
